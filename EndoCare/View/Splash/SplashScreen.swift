@@ -25,7 +25,7 @@ struct SplashScreen: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: LoginTeenager()) {
+                NavigationLink(destination: Login()) {
                     HStack{
                         Text("Entrar")
                             .bold()
@@ -35,7 +35,7 @@ struct SplashScreen: View {
                             .foregroundColor(Color("primaryColor"))
                             .cornerRadius(100)
                     }
-                }.padding(.horizontal)
+                }
                 
                 Button( action: {
                     print("Oi")
@@ -52,13 +52,18 @@ struct SplashScreen: View {
                                 RoundedRectangle(cornerRadius: 100)
                                     .stroke(Color.white, lineWidth: 2)
                             )
+                            .padding(.bottom)
                     }
-                }.padding(.horizontal)
+                }
                 
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-            .background(Color("primaryColor"))
-        }
+            .frame(
+                maxWidth: .infinity,
+                maxHeight: .infinity,
+                alignment: .center
+            )
+            .padding(.horizontal)
+        }.background(Color("primaryColor"))
     }
 }
 
