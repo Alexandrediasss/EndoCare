@@ -14,6 +14,8 @@ struct Login: View {
     var body: some View {
         ZStack{
             VStack{
+                Spacer()
+                
                 Image("loginImage")
                     .resizable()
                     .scaledToFit()
@@ -22,18 +24,48 @@ struct Login: View {
                 Spacer()
                 
                 VStack{
-                    Text("Email")
-                        .foregroundColor(Color("textFieldColor"))
-                        .bold()
+                    HStack{
+                        Text("Email")
+                            .bold()
+                            .multilineTextAlignment(.leading)
+                            .foregroundColor(Color("textFieldColor"))
+                        
+                        Spacer()
+                    }
                     TextField("Digite o seu email", text: $email)
-                }.padding()
+                        .padding(.leading)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .frame(height: 50)
+                        .background(Color.white)
+                        .foregroundColor(Color("textFieldColor"))
+                        .cornerRadius(100)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 100)
+                                .stroke(Color("primaryColor"), lineWidth: 2)
+                        )
+                }
                 
                 VStack{
-                    Text("Email")
+                    HStack{
+                        Text("Senha")
+                            .bold()
+                            .multilineTextAlignment(.leading)
+                            .foregroundColor(Color("textFieldColor"))
+                        
+                        Spacer()
+                    }
+                    TextField("Digite a sua senha", text: $email)
+                        .padding(.leading)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .frame(height: 50)
+                        .background(Color.white)
                         .foregroundColor(Color("textFieldColor"))
-                        .bold()
-                    TextField("Digite o seu email", text: $email)
-                }.padding()
+                        .cornerRadius(100)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 100)
+                                .stroke(Color("primaryColor"), lineWidth: 2)
+                        )
+                }.frame(maxWidth: .infinity, alignment: .leading)
                 
                 Spacer()
                 
@@ -50,12 +82,7 @@ struct Login: View {
                     }
                 }
             }
-                .frame(
-                    maxWidth: .infinity,
-                    maxHeight: .infinity,
-                    alignment: .center
-                )
-                .padding(.horizontal)
+            .padding(.horizontal, 24)
         }
     }
 }

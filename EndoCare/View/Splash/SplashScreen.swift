@@ -57,12 +57,7 @@ struct SplashScreen: View {
                 }
                 
             }
-            .frame(
-                maxWidth: .infinity,
-                maxHeight: .infinity,
-                alignment: .center
-            )
-            .padding(.horizontal)
+            .padding(.horizontal, 24)
         }.background(Color("primaryColor"))
     }
 }
