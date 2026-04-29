@@ -12,7 +12,7 @@
 		9FD6B3562F9FC40400E5AE49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6B3552F9FC40400E5AE49 /* Assets.xcassets */; };
 		9FD6B3592F9FC40400E5AE49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6B3582F9FC40400E5AE49 /* Preview Assets.xcassets */; };
 		9FD6B3652F9FCAEB00E5AE49 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B3642F9FCAEB00E5AE49 /* SplashScreen.swift */; };
-		9FD6B36B2F9FCC5D00E5AE49 /* LoginTeenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B36A2F9FCC5D00E5AE49 /* LoginTeenager.swift */; };
+		9FD6B36B2F9FCC5D00E5AE49 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B36A2F9FCC5D00E5AE49 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		9FD6B3552F9FC40400E5AE49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FD6B3582F9FC40400E5AE49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9FD6B3642F9FCAEB00E5AE49 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
-		9FD6B36A2F9FCC5D00E5AE49 /* LoginTeenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTeenager.swift; sourceTree = "<group>"; };
+		9FD6B36A2F9FCC5D00E5AE49 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		9FD6B36C2F9FE52000E5AE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,17 +110,9 @@
 		9FD6B3662F9FCBC800E5AE49 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				9FD6B3672F9FCBCE00E5AE49 /* LoginTeenager */,
+				9FD6B36A2F9FCC5D00E5AE49 /* Login.swift */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		9FD6B3672F9FCBCE00E5AE49 /* LoginTeenager */ = {
-			isa = PBXGroup;
-			children = (
-				9FD6B36A2F9FCC5D00E5AE49 /* LoginTeenager.swift */,
-			);
-			path = LoginTeenager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +188,7 @@
 			files = (
 				9FD6B3652F9FCAEB00E5AE49 /* SplashScreen.swift in Sources */,
 				9FD6B3542F9FC40200E5AE49 /* ContentView.swift in Sources */,
-				9FD6B36B2F9FCC5D00E5AE49 /* LoginTeenager.swift in Sources */,
+				9FD6B36B2F9FCC5D00E5AE49 /* Login.swift in Sources */,
 				9FD6B3522F9FC40200E5AE49 /* EndoCareApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
