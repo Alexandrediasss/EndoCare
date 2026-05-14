@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FAFE8F02FB66973009922E2 /* CreateAccountForms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAFE8EF2FB66973009922E2 /* CreateAccountForms.swift */; };
 		9FD6B3522F9FC40200E5AE49 /* EndoCareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B3512F9FC40200E5AE49 /* EndoCareApp.swift */; };
 		9FD6B3542F9FC40200E5AE49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B3532F9FC40200E5AE49 /* ContentView.swift */; };
 		9FD6B3562F9FC40400E5AE49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6B3552F9FC40400E5AE49 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9FAFE8EF2FB66973009922E2 /* CreateAccountForms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountForms.swift; sourceTree = "<group>"; };
 		9FD6B34E2F9FC40200E5AE49 /* EndoCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EndoCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD6B3512F9FC40200E5AE49 /* EndoCareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndoCareApp.swift; sourceTree = "<group>"; };
 		9FD6B3532F9FC40200E5AE49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FAFE8EE2FB66695009922E2 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				9FAFE8EF2FB66973009922E2 /* CreateAccountForms.swift */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
 		9FD6B3452F9FC40200E5AE49 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 				9FD6B3532F9FC40200E5AE49 /* ContentView.swift */,
 				9FD6B3632F9FCAAA00E5AE49 /* Splash */,
 				9FD6B3662F9FCBC800E5AE49 /* Login */,
+				9FAFE8EE2FB66695009922E2 /* CreateAccount */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +201,7 @@
 				9FD6B3542F9FC40200E5AE49 /* ContentView.swift in Sources */,
 				9FD6B36B2F9FCC5D00E5AE49 /* Login.swift in Sources */,
 				9FD6B3522F9FC40200E5AE49 /* EndoCareApp.swift in Sources */,
+				9FAFE8F02FB66973009922E2 /* CreateAccountForms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
