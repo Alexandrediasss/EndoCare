@@ -17,7 +17,7 @@ struct Forms: View {
         VStack{
             Spacer()
             
-            Image("loginImage")
+            Image(stepContent.image)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, alignment: .center)
@@ -102,7 +102,7 @@ struct Forms: View {
                     }
             }) {
                 HStack {
-                    Text("Próximo)
+                    Text("Próximo")
                         .bold()
                         .frame(maxWidth: .infinity, alignment: .center)
                         .frame(height: 50)
@@ -120,6 +120,7 @@ struct Forms: View {
 struct Forms_Previews: PreviewProvider {
     static var previews: some View {
         Forms(steps: .constant("step1"), stepContent: StepContent(
+            image: "loginImage",
             label1: "Email",
             label2: "Senha",
             label3: "Confirmar Senha",

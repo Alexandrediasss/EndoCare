@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct StepContent {
+    let image: String
     let label1: String
     let label2: String
     let label3: String
@@ -20,6 +21,7 @@ struct CreateAccountForms: View {
     @State private var steps : String = "step1"
     
     let step1Content = StepContent(
+        image: "step1Image",
         label1: "Primeiro Nome",
         label2: "Segundo Nome",
         label3: "Data de Nascimento",
@@ -29,6 +31,7 @@ struct CreateAccountForms: View {
     )
     
     let step2Content = StepContent(
+        image: "step2Image",
         label1: "Gênero",
         label2: "Peso",
         label3: "Altura",
@@ -38,6 +41,7 @@ struct CreateAccountForms: View {
     )
     
     let step3Content = StepContent(
+        image: "step3Image",
         label1: "Email",
         label2: "Senha",
         label3: "Confirmar Senha",
