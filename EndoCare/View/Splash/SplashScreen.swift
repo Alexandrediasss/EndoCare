@@ -37,9 +37,7 @@ struct SplashScreen: View {
                     }
                 }
                 
-                Button( action: {
-                    print("Oi")
-                }) {
+                NavigationLink(destination: CreateAccountForms()) {
                     HStack{
                         Text("Cadastro")
                             .bold()

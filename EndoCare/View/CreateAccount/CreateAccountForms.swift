@@ -48,10 +48,10 @@ struct CreateAccountForms: View {
     
     var body: some View {
         ZStack{
-            VStack{
-                
-            }
-            .padding(.horizontal, 24)
+                steps == "step1" ?
+            Forms(steps: $steps, stepContent: step1Content) :
+                (steps == "step2" ?
+                    Forms(steps: $steps, stepContent: step2Content) : Forms(steps: $steps, stepContent: step3Content))
         }
     }
 }
