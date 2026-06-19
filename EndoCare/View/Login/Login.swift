@@ -54,7 +54,7 @@ struct Login: View {
                         
                         Spacer()
                     }
-                    TextField("Digite a sua senha", text: $email)
+                    TextField("Digite a sua senha", text: $password)
                         .padding(.leading)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .frame(height: 50)
