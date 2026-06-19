@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SplashScreen: View {
+    @Binding var isLogged : Bool
     var body: some View {
         ZStack{
             VStack{
@@ -25,7 +26,7 @@ struct SplashScreen: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: Login()) {
+                NavigationLink(destination: Login(isLogged: $isLogged)) {
                     HStack{
                         Text("Entrar")
                             .bold()
@@ -37,7 +38,7 @@ struct SplashScreen: View {
                     }
                 }
                 
-                NavigationLink(destination: CreateAccountForms()) {
+                NavigationLink(destination: CreateAccountForms(isLogged: $isLogged)) {
                     HStack{
                         Text("Cadastro")
                             .bold()
@@ -57,11 +58,5 @@ struct SplashScreen: View {
             }
             .padding(.horizontal, 24)
         }.background(Color("primaryColor"))
-    }
-}
-
-struct SplashScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        SplashScreen()
     }
 }

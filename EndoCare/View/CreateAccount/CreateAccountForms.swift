@@ -19,6 +19,7 @@ struct StepContent {
 
 struct CreateAccountForms: View {
     @State private var steps : String = "step1"
+    @Binding var isLogged : Bool
     
     let step1Content = StepContent(
         image: "step1Image",
@@ -53,15 +54,9 @@ struct CreateAccountForms: View {
     var body: some View {
         ZStack{
                 steps == "step1" ?
-            Forms(steps: $steps, stepContent: step1Content) :
+            Forms(steps: $steps, isLogged: $isLogged, stepContent: step1Content) :
                 (steps == "step2" ?
-                    Forms(steps: $steps, stepContent: step2Content) : Forms(steps: $steps, stepContent: step3Content))
+                    Forms(steps: $steps, isLogged: $isLogged, stepContent: step2Content) : Forms(steps: $steps, isLogged: $isLogged, stepContent: step3Content))
         }
-    }
-}
-
-struct CreateAccountForms_Previews: PreviewProvider {
-    static var previews: some View {
-        CreateAccountForms()
     }
 }

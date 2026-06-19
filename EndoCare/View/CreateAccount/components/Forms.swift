@@ -12,6 +12,7 @@ struct Forms: View {
     @State private var navigateToDiary: Bool = false
     
     @Binding var steps : String
+    @Binding var isLogged : Bool
     
     let stepContent : StepContent
     
@@ -100,6 +101,7 @@ struct Forms: View {
                 } else if steps == "step2" {
                     steps = "step3"
                 } else {
+                    isLogged = true
                     navigateToDiary = true
                 }
             }) {
@@ -119,19 +121,5 @@ struct Forms: View {
             )
         }
         .padding(.horizontal, 24)
-    }
-}
-
-struct Forms_Previews: PreviewProvider {
-    static var previews: some View {
-        Forms(steps: .constant("step1"), stepContent: StepContent(
-            image: "loginImage",
-            label1: "Email",
-            label2: "Senha",
-            label3: "Confirmar Senha",
-            text1: "Digite o seu email",
-            text2: "Digite a sua senha",
-            text3: "Confirme a sua senha"
-        ))
     }
 }

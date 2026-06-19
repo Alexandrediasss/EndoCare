@@ -10,6 +10,9 @@ import SwiftUI
 struct Login: View {
     @State private var email : String = ""
     @State private var password : String = ""
+    @State private var navigateToDiary : Bool = false
+    
+    @Binding var isLogged : Bool
     
     var body: some View {
         ZStack{
@@ -69,7 +72,12 @@ struct Login: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: DiaryScreen()) {
+                Button(
+                    action: {
+                        isLogged = true
+                        navigateToDiary = true
+                    }
+                ){
                     HStack{
                         Text("Entrar")
                             .bold()
@@ -80,16 +88,11 @@ struct Login: View {
                             .cornerRadius(100)
                             .padding(.bottom)
                     }
-                }
+                }.background(NavigationLink(destination: DiaryScreen(), isActive: $navigateToDiary){
+                    EmptyView()
+                })
             }
             .padding(.horizontal, 24)
         }
-    }
-}
-
-struct Login_Previews: PreviewProvider {
-    static var previews: some View {
-        Login()
-            .previewDevice("iPhone 13 Pro Max")
     }
 }

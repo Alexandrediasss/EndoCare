@@ -8,10 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isLogged : Bool = false
+    
     var body: some View {
-        NavigationView{
-            SplashScreen()
-        }.navigationViewStyle(.stack)
+        if isLogged {
+            NavigationView{
+                DiaryScreen()
+            }
+        } else {
+            NavigationView{
+                SplashScreen(isLogged: $isLogged)
+            }.navigationViewStyle(.stack)
+        }
     }
 }
 
