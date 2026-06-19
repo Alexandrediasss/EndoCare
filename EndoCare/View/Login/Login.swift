@@ -69,7 +69,7 @@ struct Login: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: Login()) {
+                NavigationLink(destination: DiaryScreen()) {
                     HStack{
                         Text("Entrar")
                             .bold()
