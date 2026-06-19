@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Forms: View {
     @State private var email : String = ""
+    @State private var navigateToDiary: Bool = false
+    
     @Binding var steps : String
     
     let stepContent : StepContent
@@ -94,12 +96,12 @@ struct Forms: View {
             
             Button(action: {
                 if steps == "step1" {
-                        steps = "step2"
-                    } else if steps == "step2" {
-                        steps = "step3"
-                    } else {
-                        steps = "step1"
-                    }
+                    steps = "step2"
+                } else if steps == "step2" {
+                    steps = "step3"
+                } else {
+                    navigateToDiary = true
+                }
             }) {
                 HStack {
                     Text("Próximo")
@@ -111,7 +113,10 @@ struct Forms: View {
                         .cornerRadius(100)
                         .padding(.bottom)
                 }
+            }.background(NavigationLink(destination: DiaryScreen(), isActive: $navigateToDiary){
+                EmptyView()
             }
+            )
         }
         .padding(.horizontal, 24)
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F78923F2FE5B91B00876899 /* DiaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F78923E2FE5B91B00876899 /* DiaryScreen.swift */; };
 		9F9873372FB67231002DAF00 /* Forms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9873362FB67231002DAF00 /* Forms.swift */; };
 		9FAFE8F02FB66973009922E2 /* CreateAccountForms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAFE8EF2FB66973009922E2 /* CreateAccountForms.swift */; };
 		9FD6B3522F9FC40200E5AE49 /* EndoCareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B3512F9FC40200E5AE49 /* EndoCareApp.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F78923E2FE5B91B00876899 /* DiaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryScreen.swift; sourceTree = "<group>"; };
 		9F9873362FB67231002DAF00 /* Forms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forms.swift; sourceTree = "<group>"; };
 		9FAFE8EF2FB66973009922E2 /* CreateAccountForms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountForms.swift; sourceTree = "<group>"; };
 		9FD6B34E2F9FC40200E5AE49 /* EndoCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EndoCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F78923B2FE5B83400876899 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				9F78923E2FE5B91B00876899 /* DiaryScreen.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
 		9F9873352FB6720D002DAF00 /* components */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 				9FD6B3632F9FCAAA00E5AE49 /* Splash */,
 				9FD6B3662F9FCBC800E5AE49 /* Login */,
 				9FAFE8EE2FB66695009922E2 /* CreateAccount */,
+				9F78923B2FE5B83400876899 /* Diary */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F78923F2FE5B91B00876899 /* DiaryScreen.swift in Sources */,
 				9FD6B3652F9FCAEB00E5AE49 /* SplashScreen.swift in Sources */,
 				9FD6B3542F9FC40200E5AE49 /* ContentView.swift in Sources */,
 				9FD6B36B2F9FCC5D00E5AE49 /* Login.swift in Sources */,
