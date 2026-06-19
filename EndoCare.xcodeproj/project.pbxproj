@@ -16,6 +16,7 @@
 		9FD6B3592F9FC40400E5AE49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6B3582F9FC40400E5AE49 /* Preview Assets.xcassets */; };
 		9FD6B3652F9FCAEB00E5AE49 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B3642F9FCAEB00E5AE49 /* SplashScreen.swift */; };
 		9FD6B36B2F9FCC5D00E5AE49 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B36A2F9FCC5D00E5AE49 /* Login.swift */; };
+		9FF84E712FE5CD2600A8657C /* CardCharacterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF84E702FE5CD2600A8657C /* CardCharacterComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9FD6B3642F9FCAEB00E5AE49 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		9FD6B36A2F9FCC5D00E5AE49 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		9FD6B36C2F9FE52000E5AE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9FF84E702FE5CD2600A8657C /* CardCharacterComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCharacterComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		9F78923B2FE5B83400876899 /* Diary */ = {
 			isa = PBXGroup;
 			children = (
+				9FF84E6F2FE5CD0B00A8657C /* Components */,
 				9F78923E2FE5B91B00876899 /* DiaryScreen.swift */,
 			);
 			path = Diary;
@@ -148,6 +151,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		9FF84E6F2FE5CD0B00A8657C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9FF84E702FE5CD2600A8657C /* CardCharacterComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F78923F2FE5B91B00876899 /* DiaryScreen.swift in Sources */,
+				9FF84E712FE5CD2600A8657C /* CardCharacterComponent.swift in Sources */,
 				9FD6B3652F9FCAEB00E5AE49 /* SplashScreen.swift in Sources */,
 				9FD6B3542F9FC40200E5AE49 /* ContentView.swift in Sources */,
 				9FD6B36B2F9FCC5D00E5AE49 /* Login.swift in Sources */,
